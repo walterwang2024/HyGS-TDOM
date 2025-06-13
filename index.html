@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HyGS-TDOM</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+      line-height: 1.6;
+      background: #f9f9f9;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 15px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: #005fa3;
+    }
+    code {
+      background: #eee;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 1em;
+    }
+    .copy-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    input {
+      padding: 5px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HyGS-TDOM</h1>
+
+  <p>
+    <strong>Hybrid Gaussian Splatting for True Digital Orthophoto Map Generation</strong><br>
+    This project proposes a hybrid framework combining 3DGS and FSGS to address sparse-view TDOM challenges, achieving high-quality true orthophotos from UAV imagery.
+  </p>
+
+  <p>
+    📄 <a href="https://arxiv.org/abs/你的论文编号" target="_blank">Read the Paper on arXiv</a><br>
+    💻 <a href="https://github.com/walterwang2024/HyGS-TDOM" target="_blank">View the Code on GitHub</a>
+  </p>
+
+  <h2>🔗 Copy Project Homepage URL</h2>
+  <div class="copy-box">
+    <input type="text" value="https://walterwang2024.github.io/HyGS-TDOM/" id="linkText" readonly />
+    <button class="button" onclick="copyLink()">Copy</button>
+  </div>
+
+  <script>
+    function copyLink() {
+      const copyText = document.getElementById("linkText");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // for mobile
+      document.execCommand("copy");
+      alert("Link copied to clipboard!");
+    }
+  </script>
+
+  <h2>🖼️ Teaser</h2>
+  <img src="images/teaser.png" alt="Teaser image" />
+
+  <h2>📊 Visual Results</h2>
+  <img src="images/result1.png" alt="Result 1" />
+  <img src="images/result2.png" alt="Result 2" />
+
+</body>
+</html>
