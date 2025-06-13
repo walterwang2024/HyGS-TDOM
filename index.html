@@ -1,93 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
   <title>HyGS-TDOM</title>
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: 2em auto;
-      padding: 1em;
-      line-height: 1.6;
-      background: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #ffffff;
+      color: #333;
+      max-width: 900px;
+      margin: auto;
     }
     h1 {
       text-align: center;
-      color: #333;
+      color: #a00;
+      margin-bottom: 5px;
     }
-    .button {
+    h2 {
+      color: #a00;
+    }
+    .authors {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    .venue {
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+      color: #a00;
+      margin-bottom: 20px;
+    }
+    .buttons {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .buttons a {
       display: inline-block;
-      padding: 10px 15px;
-      background-color: #007acc;
+      background: #444;
       color: white;
-      border: none;
+      text-decoration: none;
+      padding: 10px 15px;
+      margin: 5px;
       border-radius: 5px;
-      margin-top: 10px;
-      cursor: pointer;
     }
-    .button:hover {
-      background-color: #005fa3;
+    .section {
+      margin-bottom: 40px;
     }
-    code {
-      background: #eee;
-      padding: 2px 5px;
-      border-radius: 3px;
-    }
-    img {
+    iframe {
+      display: block;
+      margin: 20px auto;
       max-width: 100%;
-      border-radius: 8px;
-      margin-top: 1em;
-    }
-    .copy-box {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    input {
-      padding: 5px;
-      width: 100%;
     }
   </style>
 </head>
 <body>
 
   <h1>HyGS-TDOM</h1>
+  <div class="authors">
+    Walter Wang, Your Coauthors Here<br>
+    Wuhan University of XXX
+  </div>
+  <div class="venue">Some Conference or Journal Name, 2025</div>
 
-  <p>
-    <strong>Hybrid Gaussian Splatting for True Digital Orthophoto Map Generation</strong><br>
-    This project proposes a hybrid framework combining 3DGS and FSGS to address sparse-view TDOM challenges, achieving high-quality true orthophotos from UAV imagery.
-  </p>
-
-  <p>
-    📄 <a href="https://arxiv.org/abs/你的论文编号" target="_blank">Read the Paper on arXiv</a><br>
-    💻 <a href="https://github.com/walterwang2024/HyGS-TDOM" target="_blank">View the Code on GitHub</a>
-  </p>
-
-  <h2>🔗 Copy Project Homepage URL</h2>
-  <div class="copy-box">
-    <input type="text" value="https://walterwang2024.github.io/HyGS-TDOM/" id="linkText" readonly />
-    <button class="button" onclick="copyLink()">Copy</button>
+  <div class="buttons">
+    <a href="#">📄 Paper</a>
+    <a href="https://github.com/walterwang2024/HyGS-TDOM">💻 Code</a>
+    <a href="#">📺 Video</a>
   </div>
 
-  <script>
-    function copyLink() {
-      const copyText = document.getElementById("linkText");
-      copyText.select();
-      copyText.setSelectionRange(0, 99999); // for mobile
-      document.execCommand("copy");
-      alert("Link copied to clipboard!");
-    }
-  </script>
+  <div class="section">
+    <h2>Overview</h2>
+    <p>
+      This project proposes HyGS-TDOM, a hybrid framework for true digital orthophoto map generation by combining 3D Gaussian Splatting and few-shot view synthesis. Our approach tackles the challenges in sparse-view UAV photogrammetry by leveraging FSGS-based representations to boost quality near boundary areas.
+    </p>
+  </div>
 
-  <h2>🖼️ Teaser</h2>
-  <img src="images/teaser.png" alt="Teaser image" />
-
-  <h2>📊 Visual Results</h2>
-  <img src="images/result1.png" alt="Result 1" />
-  <img src="images/result2.png" alt="Result 2" />
+  <div class="section">
+    <h2>Experiments</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/XXXXXXXXXXX" frameborder="0" allowfullscreen></iframe>
+  </div>
 
 </body>
 </html>
