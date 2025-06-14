@@ -162,7 +162,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">HyGS-TDOM: A Hybrid Gaussian Splatting Framework for generating TDOMs from both dense and sparse views</h1>
+          <h1 class="title is-2 publication-title">HyGS-TDOM: A Hybrid Gaussian Splatting Framework for generating TDOMs from both dense and sparse views</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="">Xiang Wang</a></sup>&nbsp;&nbsp;
@@ -221,35 +221,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            The True Digital Orthophoto Map (TDOM) possesses both map geometric accuracy and image characteristics, serving as an essential product for digital twins and Geographic Information Systems (GIS). Traditional TDOM generation methods typically involve
-a series of intricate geometric processing steps, which often result in computational inefficiency, high costs, and error accumulation.
-More recently, 3DGS-based methods were developed to generate TDOM in more efficient manner, yet they show some degenerated
-rendering performance on sparse view scenarios, which is naturally common when dealing with boundary area of photogrammetric
-UAV images. To address the above issues, we introduce a hybrid method that integrates 3DGS with Few-Shot Gaussian Splatting
-(FSGS, Zhu et al. (2024)). Specifically, our method first partitions the UAV images into dense and sparse view scenarios based on
-image overlapping degree. Then, two specific 3DGS training solutions are employed: in dense-view scenarios, the standard 3DGS
-optimization is applied, in sparse-view scenarios, the FSGS framework is adopted, which incorporates a proximity-guided Gaussian
-unpooling strategy and monocular depth supervision, thereby enhancing adaptive density control and geometric guidance through
-improved constraints on Gaussians. Third, two trained Gaussians are merged. Finally, by substituting the perspective projection
-with the orthogonal projection, our method directly generates TDOM while eliminating the requirement for explicit Digital Surface
-Model (DSM) and occlusion detection. Extensive experimental results demonstrate that our method outperforms existing commercial software in several aspects while achieving superior orthophoto quality compared to 3DGS in sparse-view scenarios.
+            The True Digital Orthophoto Map (TDOM) is an essential product for digital twins and Geographic Information Systems (GIS). 
+            Traditional TDOM generation methods heavily relies on occlusion detection and DSM accuracy.
+            More recently, 3DGS-based methods were developed to generate TDOM in more efficient manner, yet they show some degenerated 
+            rendering performance in sparse view scenarios. 
+            To address the above issues, we introduce a hybrid method that integrates 3DGS with Few-Shot Gaussian Splatting (FSGS, Zhu et al. (2024)), 
+            which incorporates a proximity-guided Gaussian unpooling strategy and monocular depth supervision, 
+            thereby enhancing adaptive density control and geometric guidance through improved constraints on Gaussians.
+            Specifically, our method first partitions the UAV images into dense and sparse view scenarios based on image overlapping degree. 
+            Then, two specific 3DGS training solutions are employed: in dense view scenarios, the standard 3DGS optimization is applied, 
+            in sparse view scenarios, the FSGS framework is adopted. Third, two trained Gaussians are merged. 
+            Finally, by substituting the perspective projection with the orthogonal projection, our method directly generates TDOM. 
+            Extensive experimental results demonstrate that our method outperforms existing commercial software in several aspects while achieving superior orthophoto quality compared to 3DGS in sparse view scenarios.
            
-            In this paper, we propose a novel method for generating True Digital Orthophoto Maps (TDOMs)
-             using 3D Gaussian Splatting (3DGS). Traditional methods for TDOM generation face challenges
-              such as occlusion detection and distortion correction, which often result in inaccuracies
-               and visual artifacts. Our approach leverages 3DGS to directly produce orthophotos by
-                projecting Gaussian ellipsoid kernels onto 2D image planes, bypassing the need for complex
-                 occlusion detection procedures. Additionally, we introduce a divide-and-conquer strategy
-                  to efficiently manage large-scale scenes, optimizing both memory usage and rendering time.
-                   Complementing this approach, we implement a fully anisotropic Gaussian kernel that adapts
-                    to the varying characteristics of different regions, thereby enhancing accuracy and visual
-                     quality, particularly in the representation of reflective surfaces and slender structures.
-                      The proposed method significantly improves the accuracy of building edge reconstruction
-                       and eliminates distortions in weak texture regions. Experimental results demonstrate
-                        that our approach outperforms existing commercial software in both visual quality
-                         and computational efficiency, making it a promising solution for large-scale urban
-                          scene reconstruction.
-            
           </p>
         </div>
       </div>
