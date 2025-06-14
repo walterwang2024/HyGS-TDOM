@@ -242,11 +242,17 @@
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
-        <img src="images/framework.png"
+        
+        <br/>
+        
+        <div class="content has-text-justified">
+          <img src="images/framework.png"
                style="width: 100%; max-width: 1000px;"
                class="framework-image"
                alt="framework"/>
-        <div class="content has-text-justified">
+          
+          <br/>
+          
           <p>
             Upon receiving the sparse point cloud input, we divide it into two subsets: one subset retains a complete copy of the point cloud 
             and undergoes standard 3DGS pipeline processing to optimize Gaussian ellipsoids in dense view regions; 
@@ -257,11 +263,12 @@
             with an orthographic projection during the rendering stage. Our work enables pixel-level rendering that maintains vertical view geometric consistency, 
             ultimately producing TDOM results with images of various overlapping degree and occlusion-aware capabilities.
           </p>
-          
         </div>
         
+        <br/>
+        
         <div class="content has-text-justified">
-          <img src="images/partition_merge.jpg"
+          <img src="images/partition_merge.png"
                style="width: 100%; max-width: 1000px;"
                class="framework-image"
                alt="partition and merge"/>
@@ -277,66 +284,39 @@
 <!-- Comparisons -->
 <section class="section">
     <div class="container is-max-desktop">
-      <h2 class="title is-3" style="text-align: center;">More Results</h2>
-
+      <h2 class="title is-3" style="text-align: center;">Visual Results</h2>
 
       <br/>
       <div class="image-container">
-        <!--<h2 class="title is-4">More Results</h2>-->
-            <img style="width: 90%;" src="images/fruit1.png"/>
+            <img style="width: 90%;" src="images/qualitative.png"/>
             </object>
       </div>
         
       <br/>
       <div class="image-container">
-            <img style="width: 90%;" src="images/fruit2.png"/>
+            <img style="width: 90%;" src="images/resolution.png"/>
             </object>
       </div>
 
       <br/>
       <div class="image-container">
-            <img style="width: 98%;" src="images/fruit3.png"/>
+            <img style="width: 98%;" src="images/overlapvisual.png"/>
             </object>
       </div>
-
-      <br/>
-      <div class="image-container">
-            <img style="width: 70%;" src="images/fruit4.png"/>
-            </object>
-      </div>
-
+      
     </div>
   <script src="./static/js/comparison.js"></script>
   </div>
 </section>
 
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>
-      @article{2024Tortho, 
-        title={Tortho-Gaussian: Splatting True Digital Orthophoto Maps},
-        author={Xin Wang, Wendi Zhang, Haibin Ai, Zongqian Zhan*}, 
-        year={2024} 
-      }
-      
-      ```</code></pre>
-  </div>
-</section>
-
-
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
-      <a class="icon-link"
-         href="./static/videos/nerfies_paper.pdf">
-        <i class="fas fa-file-pdf"></i>
-      </a>
       <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
+    
     <div class="columns is-centered">
       <div class="column is-8">
         <div class="content">
