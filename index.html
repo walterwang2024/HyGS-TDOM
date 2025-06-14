@@ -5,10 +5,8 @@
   <meta name="description"
         content="soon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tortho-Gaussian: Splatting True Digital Orthophoto Maps</title>
+  <title>HyGS-TDOM</title>
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script> -->
   <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -195,7 +193,7 @@
               
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/xwangSGG/Tortho_Gaussian"
+                <a href="https://github.com/walterwang2024/HyGS-TDOM"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
@@ -203,18 +201,8 @@
                   <span>Code</span>
                   </a>
               </span>
-              
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                  </a> -->
+            
             </div>
-
           </div>
         </div>
       </div>
@@ -222,290 +210,8 @@
   </div>
 </section>
 
-
-
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-      <div class="container">
-          <div class="content has-text-justified">
-              <h3 class="title is-3 is-centered has-text-centered">Visual Comparisons</h3>
-          </div>
-          <div class="content has-text-justified">
-              <p>
-
-              </p>
-          </div>
-          <div class="columns is-centered">
-              <!-- Visual Effects. -->
-              <div class="column">
-                  <div class="content">
-                      <div class="columns is-centered">
-                          <div class="column is-full-width">
-                              <div id="teapot" class="bal-container-asg">
-
-                                  <div class="comparison-container">
-                                    <img-comparison-slider>
-                                      <img slot="first" src="images/compare/npu1.png" alt="Before Image"/>
-                                      <img slot="second" src="images/compare/npu2.png" alt="After Image"/>
-                                    </img-comparison-slider>
-                                    <div class="image-label" style="position: absolute; top: 10px; left: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                                      Ours
-                                    </div>
-                                    <div class="image-label" style="position: absolute; top: 10px; right: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                                      Origin
-                                    </div>
-                                  </div>
-
-                              </div>
-
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="column">
-                  <div class="columns is-centered">
-                      <div class="column content">
-
-                        <div class="comparison-container">
-                          <img-comparison-slider>
-                            <img slot="first" src="images/compare/ieu22.png" alt="Before Image"/>
-                            <img slot="second" src="images/compare/ieu11.png" alt="After Image"/>
-                          </img-comparison-slider>
-                          <div class="image-label" style="position: absolute; top: 10px; left: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                            Ours
-                          </div>
-                          <div class="image-label" style="position: absolute; top: 10px; right: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                            Origin
-                          </div>
-                        </div>
-
-                      </div>
-                  </div>
-              </div>
-
-              <div class="column">
-                  <div class="columns is-centered">
-                      <div class="column content">
-
-                        <div class="comparison-container">
-                          <img-comparison-slider>
-                            <img slot="first" src="images/compare/w11.png" alt="Before Image"/>
-                            <img slot="second" src="images/compare/w22.png" alt="After Image"/>
-                          </img-comparison-slider>
-                          <div class="image-label" style="position: absolute; top: 10px; left: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                            Ours
-                          </div>
-                          <div class="image-label" style="position: absolute; top: 10px; right: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                            Origin
-                          </div>
-                        </div>
-
-                      </div>
-                  </div>
-              </div>
-
-          </div>
-      </div>
-  </div>
-</section>
-
-
-
-
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-      <div class="container is-max-desktop">
-          <div class="content has-text-justified">
-              <h3 class="title is-3 is-centered has-text-centered">Visual Comparisons on DroneMap phantom3-ieu Dataset</h3>
-              <div class="columns is-centered">
-                <!-- Visual Effects. -->
-                <div class="column">
-                    <div class="content">
-                        <div class="columns is-centered">
-                            <div class="column is-full-width">
-                                <div id="teapot" class="bal-container-asg">
-  
-                                    <div class="comparison-container">
-                                      <img-comparison-slider>
-                                        <img slot="first" src="images/compare/m111.png" alt="Before Image"/>
-                                        <img slot="second" src="images/compare/m666.png" alt="After Image"/>
-                                      </img-comparison-slider>
-                                      <div class="image-label" style="position: absolute; top: 10px; left: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                                        Map2DFusion
-                                      </div>
-                                      <div class="image-label" style="position: absolute; top: 10px; right: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                                        Ortho-GS(ours)
-                                      </div>
-                                    </div>
-  
-                                </div>
-  
-                            </div>
-                        </div>
-                    </div>
-                </div>
-  
-                <div class="column">
-                    <div class="columns is-centered">
-                        <div class="column content">
-  
-                          <div class="comparison-container">
-                            <img-comparison-slider>
-                              <img slot="first" src="images/compare/m222.png" alt="Before Image"/>
-                              <img slot="second" src="images/compare/m666.png" alt="After Image"/>
-                            </img-comparison-slider>
-                            <div class="image-label" style="position: absolute; top: 10px; left: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                              ContextCapture
-                            </div>
-                            <div class="image-label" style="position: absolute; top: 10px; right: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                              Ortho-GS(ours)
-                            </div>
-                          </div>
-  
-                        </div>
-                    </div>
-                </div>
-  
-                <div class="column">
-                    <div class="columns is-centered">
-                        <div class="column content">
-  
-                          <div class="comparison-container">
-                            <img-comparison-slider>
-                              <img slot="first" src="images/compare/m333.png" alt="Before Image"/>
-                              <img slot="second" src="images/compare/m666.png" alt="After Image"/>
-                            </img-comparison-slider>
-                            <div class="image-label" style="position: absolute; top: 10px; left: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                              Metashape
-                            </div>
-                            <div class="image-label" style="position: absolute; top: 10px; right: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                              Ortho-GS(ours)
-                            </div>
-                          </div>
-  
-                        </div>
-                    </div>
-                </div>
-  
-            </div>
-            <div class="columns is-centered">
-              <!-- Visual Effects. -->
-              <div class="column">
-                  <div class="content">
-                      <div class="columns is-centered">
-                          <div class="column is-full-width">
-                              <div id="teapot" class="bal-container-asg">
-
-                                  <div class="comparison-container">
-                                    <img-comparison-slider>
-                                      <img slot="first" src="images/compare/m444.png" alt="Before Image"/>
-                                      <img slot="second" src="images/compare/m666.png" alt="After Image"/>
-                                    </img-comparison-slider>
-                                    <div class="image-label" style="position: absolute; top: 10px; left: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                                      Pix4DMapper
-                                    </div>
-                                    <div class="image-label" style="position: absolute; top: 10px; right: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                                      Ortho-GS(ours)
-                                    </div>
-                                  </div>
-
-                              </div>
-
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <div class="column">
-                  <div class="columns is-centered">
-                      <div class="column content">
-
-                        <div class="comparison-container">
-                          <img-comparison-slider>
-                            <img slot="first" src="images/compare/m555.png" alt="Before Image"/>
-                            <img slot="second" src="images/compare/m666.png" alt="After Image"/>
-                          </img-comparison-slider>
-                          <div class="image-label" style="position: absolute; top: 10px; left: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                            Ortho-NeRF
-                          </div>
-                          <div class="image-label" style="position: absolute; top: 10px; right: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                            Ortho-GS(ours)
-                          </div>
-                        </div>
-
-                      </div>
-                  </div>
-              </div>
-
-              <div class="column">
-                  <div class="columns is-centered">
-                      <div class="column content">
-
-                        <div class="comparison-container">
-                          <img-comparison-slider>
-                            <img slot="first" src="images/compare/m777.png" alt="Before Image"/>
-                            <img slot="second" src="images/compare/m666.png" alt="After Image"/>
-                          </img-comparison-slider>
-                          <div class="image-label" style="position: absolute; top: 10px; left: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                            GT(Origin)
-                          </div>
-                          <div class="image-label" style="position: absolute; top: 10px; right: 10px; color: white; font-weight: bold; background-color: rgba(0, 0, 0, 0.5); padding: 5px 10px; border-radius: 5px;">
-                            Ortho-GS(ours)
-                          </div>
-                        </div>
-
-                      </div>
-                  </div>
-              </div>
-
-          </div>
-
-          
-      </div>
-  </div>
-</section>
-
-<!-- JavaScript for Slider -->
-<script>
-  const sliderContainer = document.querySelector('.slider-container');
-  const bar1 = document.querySelector('.bar1');
-  const bar2 = document.querySelector('.bar2');
-  const bar3 = document.querySelector('.bar3');
-  const left1 = document.querySelector('.left1');
-  const left2 = document.querySelector('.left2');
-  const left3 = document.querySelector('.left3');
-
-  function draggableBar(bar, leftSection, nextLeft) {
-      bar.onmousedown = function(event) {
-          document.onmousemove = function(event) {
-              let position = event.pageX - sliderContainer.offsetLeft;
-              position = Math.max(0, Math.min(sliderContainer.offsetWidth, position));
-              bar.style.left = position + 'px';
-              leftSection.style.width = position + 'px';
-              if (nextLeft) {
-                  nextLeft.style.left = position + 'px';
-              }
-          }
-          document.onmouseup = function() {
-              document.onmousemove = null;
-          }
-      }
-  }
-
-  draggableBar(bar1, left1, left2);
-  draggableBar(bar2, left2, left3);
-  draggableBar(bar3, left3, null);
-</script>
-
-
-
-
-
+</div><div class="hr"></div>
+<div>
 
 
 <section class="section">
@@ -515,6 +221,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
+            The True Digital Orthophoto Map (TDOM) possesses both map geometric accuracy and image characteristics, serving as an essential product for digital twins and Geographic Information Systems (GIS). Traditional TDOM generation methods typically involve
+a series of intricate geometric processing steps, which often result in computational inefficiency, high costs, and error accumulation.
+More recently, 3DGS-based methods were developed to generate TDOM in more efficient manner, yet they show some degenerated
+rendering performance on sparse view scenarios, which is naturally common when dealing with boundary area of photogrammetric
+UAV images. To address the above issues, we introduce a hybrid method that integrates 3DGS with Few-Shot Gaussian Splatting
+(FSGS, Zhu et al. (2024)). Specifically, our method first partitions the UAV images into dense and sparse view scenarios based on
+image overlapping degree. Then, two specific 3DGS training solutions are employed: in dense-view scenarios, the standard 3DGS
+optimization is applied, in sparse-view scenarios, the FSGS framework is adopted, which incorporates a proximity-guided Gaussian
+unpooling strategy and monocular depth supervision, thereby enhancing adaptive density control and geometric guidance through
+improved constraints on Gaussians. Third, two trained Gaussians are merged. Finally, by substituting the perspective projection
+with the orthogonal projection, our method directly generates TDOM while eliminating the requirement for explicit Digital Surface
+Model (DSM) and occlusion detection. Extensive experimental results demonstrate that our method outperforms existing commercial software in several aspects while achieving superior orthophoto quality compared to 3DGS in sparse-view scenarios.
+           
             In this paper, we propose a novel method for generating True Digital Orthophoto Maps (TDOMs)
              using 3D Gaussian Splatting (3DGS). Traditional methods for TDOM generation face challenges
               such as occlusion detection and distortion correction, which often result in inaccuracies
@@ -530,6 +249,7 @@
                         that our approach outperforms existing commercial software in both visual quality
                          and computational efficiency, making it a promising solution for large-scale urban
                           scene reconstruction.
+            
           </p>
         </div>
       </div>
