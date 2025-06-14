@@ -243,31 +243,29 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Method</h2>
         <div class="content has-text-justified">
-          <img src="images/pri1.jpg"
+          <p>
+            Upon receiving the sparse point cloud input, we divide it into two subsets: one subset retains a complete copy of the point cloud 
+            and undergoes standard 3DGS pipeline processing to optimize Gaussian ellipsoids in dense view regions; 
+            the other subset undergoes view transformation to extract point clouds from boundary areas, which are then 
+            processed using the FSGS framework incorporating proximity-guided unpooling and monocular depth supervision to 
+            address boundary degenerated issues. Following separate optimization procedures, our method then merges the resulting Gaussian sets 
+            to construct a unified 3D scene representation. For orthophoto generation, we replace the default perspective projection 
+            with an orthographic projection during the rendering stage. Our work enables pixel-level rendering that maintains vertical view geometric consistency, 
+            ultimately producing TDOM results with images of various overlapping degree and occlusion-aware capabilities.
+          </p>
+          <img src="images/framework.png"
                style="width: 100%; max-width: 1000px;"
                class="framework-image"
-               alt="MGFs overview."/>
-          <p>
-            
-          </p>
+               alt="framework"/>
         </div>
+        
         <div class="content has-text-justified">
-          <img src="images/pri2.jpg"
+          <img src="images/partition_merge.jpg"
                style="width: 100%; max-width: 1000px;"
                class="framework-image"
-               alt="MGFs overview."/>
-          <p>
-          </p>
+               alt="partition and merge"/>
         </div>
-        <div class="content has-text-justified">
-          <img src="images/pri3.png"
-               style="width: 100%; max-width: 1000px;"
-               class="framework-image"
-               alt="MGFs overview."/>
-          <p>
-            
-          </p>
-        </div>
+        
       </div>
     </div>
   </div>
